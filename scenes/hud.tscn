@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://pyvd1wq7l4un"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_3jsq2"]
+[ext_resource type="FontFile" uid="uid://dwa4v0bg7rw3a" path="res://fonts/Xolonium-Regular.ttf" id="1_o5ruh"]
+
+[node name="hud" type="CanvasLayer"]
+script = ExtResource("1_3jsq2")
+
+[node name="score_label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -67.5
+offset_right = 67.5
+offset_bottom = 81.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_o5ruh")
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+
+[node name="message" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -214.0
+offset_top = -40.5
+offset_right = 214.0
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_o5ruh")
+theme_override_font_sizes/font_size = 64
+text = "Dodge Deez!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="start_button" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -140.0
+offset_right = 100.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_o5ruh")
+theme_override_font_sizes/font_size = 64
+text = "Start"
+
+[node name="message_timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
+[connection signal="timeout" from="message_timer" to="." method="_on_message_timer_timeout"]
