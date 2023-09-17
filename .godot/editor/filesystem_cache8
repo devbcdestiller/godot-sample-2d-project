@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1694937643
+::res://::1694940556
 icon.svg::CompressedTexture2D::4873433399434176107::1694937340::1694937343::1::::<><>::
 README.md::TextFile::-1::1686964387::0::1::::<><>::
 ::res://art/::1694937438
@@ -19,5 +19,7 @@ playerGrey_walk2.png::CompressedTexture2D::8494056281310973799::1686964387::1694
 FONTLOG.txt::TextFile::-1::1686964387::0::1::::<><>::
 LICENSE.txt::TextFile::-1::1686964387::0::1::::<><>::
 Xolonium-Regular.ttf::FontFile::8705216220522873752::1686964387::1694937438::1::::<><>::
-::res://scenes/::1694938061
-player.tscn::PackedScene::4979009658378335843::1694938061::0::1::::<><>::uid://cthcjjwu8nkwh<>uid://duiy8mysybklb<>uid://dbji7jik1a583<>uid://dtat4pbsh0q04
+::res://scenes/::1694940494
+player.tscn::PackedScene::4979009658378335843::1694940494::0::1::::<><>::res://scripts/player.gd<>uid://cthcjjwu8nkwh<>uid://duiy8mysybklb<>uid://dbji7jik1a583<>uid://dtat4pbsh0q04
+::res://scripts/::1694940373
+player.gd::GDScript::-1::1694940373::0::1::::<>Area2D<>::
